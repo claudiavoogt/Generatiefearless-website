@@ -270,7 +270,7 @@ function CourseSection() {
     {
       title: "Het Geldbrein",
       description:
-        "Ontmantel de geldovertuigingen die generaties lang zijn doorgegeven. Inclusief jouw eigen.",
+        "Doorbreek de geldovertuigingen die generaties lang zijn doorgegeven. Inclusief jouw eigen overtuigingen over geld.",
     },
     {
       title: "Het Potjessysteem",
@@ -285,12 +285,12 @@ function CourseSection() {
     {
       title: "De Eerste Stap",
       description:
-        "Stap voor stap een kindrekening openen bij een betrouwbare broker in Nederland en de eerste echte belegging doen. Je kind drukt zelf op kopen.",
+        "Stap voor stap een kindrekening openen bij een betrouwbare broker in Nederland en de eerste echte belegging doen.",
     },
     {
       title: "Fearless voor Altijd",
       description:
-        "Hoe herken je een slechte belegging? Hoe houd je de gewoonte levend? En wat is de volgende stap als je kind groeit?",
+        "Hoe herken je een slechte belegging? Hoe houd je de gewoonte van beleggen levend? En wat is de volgende stap als je kind groeit?",
     },
   ]
 
@@ -342,12 +342,12 @@ function BonusesSection() {
   const bonuses = [
     {
       title: "Het Generatie Fearless Werkboek",
-      description: "Oefeningen per module voor ouder en kind samen.",
+      description: "Oefeningen per module voor jou, maar ook voor jou en je kind samen.",
     },
     {
       title: "De Infinity Money Calculator",
       description:
-        "Zie in één oogopslag wat jouw kind opbouwt als het nu begint. Inclusief inflatie-vergelijking.",
+        "Zie in één oogopslag wat jouw kind opbouwt als het nu begint met beleggen voor de lange termijn.",
     },
     {
       title: "De Generatie Fearless Startlijst",
