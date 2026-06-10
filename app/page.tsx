@@ -482,7 +482,7 @@ function PricingSection() {
       <div className="container mx-auto max-w-2xl text-center">
         <AnimatedSection>
           <h2 className="font-sans font-extrabold text-[32px] md:text-[42px] text-white leading-tight">
-            De vraag is niet of € 197,- voor deze cursus duur is.
+            De vraag is niet of deze cursus duur is.
           </h2>
         </AnimatedSection>
 
@@ -496,15 +496,15 @@ function PricingSection() {
           <div className="font-serif text-white/85 text-lg leading-[1.8] space-y-6 text-left md:text-center">
             <p>
               Nog een generatie die niks meekrijgt over geld. Nog een kind dat op zijn 30e van nul
-              moet beginnen. Afhankelijk. Zonder plan. Zonder gewoonte.
+              moet beginnen met beleggen en niet weet waar te beginnen. Afhankelijk blijven. Zonder plan. Zonder gewoonte.
             </p>
             <p>
-              Deze cursus is niet voor iedereen. Hij is voor ouders die de cyclus willen doorbreken.
+              Deze cursus is voor ouders die deze cyclus willen doorbreken.
               Die zeggen: bij mij stopt het. Mijn kind krijgt wat ik nooit heb gekregen.
             </p>
             <p>
-              Als jij dat bent, is € 197,- geen kostenpost. Het is de beste investering die je ooit
-              voor je kind doet.
+              Als jij die ouder bent, dan is deze cursus geen kostenpost. Het is de beste investering die je ooit
+              voor je kind kunt doen.
             </p>
           </div>
         </AnimatedSection>
