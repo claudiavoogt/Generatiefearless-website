@@ -388,6 +388,26 @@ function BonusesSection() {
   )
 }
 
+function ReviewSection() {
+  return (
+    <section className="bg-navy py-16 md:py-24 px-4">
+      <div className="container mx-auto max-w-3xl">
+        <AnimatedSection>
+          <div className="max-w-[280px] mx-auto rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/review-inge.png"
+              alt="Review van Inge over de online academy"
+              width={1254}
+              height={1254}
+              className="w-full h-auto block"
+            />
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  )
+}
+
 function QuoteSection() {
   return (
     <section className="bg-navy py-16 md:py-24 px-4">
@@ -575,6 +595,7 @@ export default function Home() {
       <AboutSection />
       <CourseSection />
       <BonusesSection />
+      <ReviewSection />
       <QuoteSection />
       <FAQSection />
       <PricingSection />
