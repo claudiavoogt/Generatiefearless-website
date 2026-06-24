@@ -448,6 +448,11 @@ function FAQSection() {
         "Allereerst de wil om je kind een andere start te geven dan jij hebt gehad. Verder heb je nodig: een kind met een bankrekening, of de bereidheid om die samen te openen. Een telefoon of laptop om de lessen te bekijken. Ongeveer 15 minuten per week om samen door te werken. En later een account bij de broker voor de kindrekening, dat wordt volledig stap voor stap uitgelegd. Geen voorkennis. Geen groot startkapitaal. Geen ingewikkelde tools. Gewoon beginnen.",
     },
     {
+      question: "Zit er persoonlijke begeleiding van jou bij?",
+      answer:
+        "Nee, deze cursus doorloop je zelfstandig, samen met je kind. Kom je écht ergens niet uit? Stuur me dan een mail, dan ga ik je helpen.",
+    },
+    {
       question: "Wat maakt deze cursus anders dan jouw programma Investeren kun je Leren?",
       answer:
         "Heel goede vraag. En een eerlijk antwoord. Generatie Fearless en Investeren kun je Leren zijn twee heel verschillende producten voor twee heel verschillende fases. Generatie Fearless is voor kinderen die beginnen. Met kleine bedragen, zakgeld, bijbaantjes. Ze leren een gewoonte opbouwen, begrijpen hoe geld werkt en doen hun eerste beleggingen. Generatie Fearless is specifiek ontworpen voor ouders die hun kind willen leren beleggen. De taal is anders, de voorbeelden zijn anders, en de focus ligt op samen doen met je kind. Je krijgt praktische tools om je kind stap voor stap mee te nemen. Investeren kun je Leren is voor volwassenen die een serieus vermogen willen opbouwen. Daarin leer je welke fondsen/ETF's het best presteren, hoe je die kunt vinden, hoe je je vermogen actief beschermt en hoe je een strategie bouwt waarbij je geld exponentieel groeit. Dat is een heel ander niveau, met andere verantwoordelijkheden en andere bedragen. Zie het zo: Generatie Fearless is het fietsje met zijwieltjes. Je kind leert balanceren, krijgt vertrouwen en bouwt een gewoonte voor het leven. Investeren kun je Leren is leren om echt te leren fietsen.",
@@ -491,6 +496,73 @@ function FAQSection() {
             </AnimatedSection>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
+
+function CycleBreakerSection() {
+  return (
+    <section className="bg-whitesmoke py-16 md:py-24 px-4">
+      <div className="container mx-auto max-w-2xl">
+        <AnimatedSection>
+          <p className="font-display italic text-2xl md:text-3xl lg:text-4xl text-paars leading-tight">
+            Jij hebt altijd alles geregeld voor je kind. Maar dit niet.
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-4">
+          <p className="font-serif text-navy/70 text-lg leading-relaxed">
+            Niet omdat je het niet wilde. Maar omdat niemand het jou ooit heeft geleerd.
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-8">
+          <p className="font-serif text-navy/85 text-lg leading-relaxed">
+            Generatie Fearless verandert dat. In vijf modules leer jij, samen met je kind, hoe geld
+            echt werkt. Hoe een eerste belegging eruitziet. Hoe je een geldsysteem opzet dat
+            automatisch doorgroeit, ook als je er niet naar kijkt.
+          </p>
+        </AnimatedSection>
+
+        <div className="mt-10 grid md:grid-cols-2 gap-6 md:gap-10">
+          <AnimatedSection>
+            <div className="bg-white rounded-xl p-6 h-full border-l-4 border-mint">
+              <p className="font-sans font-bold text-navy">Wat jouw kind meeneemt</p>
+              <p className="font-serif text-navy/70 mt-2 leading-relaxed">
+                Een rekening op zijn eigen naam, een eerste belegging die al groeit, en het begrip
+                dat de meeste volwassenen op hun 35e nog niet hebben. Dat geld voor je kan werken.
+                Niet andersom.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="bg-white rounded-xl p-6 h-full border-l-4 border-paars">
+              <p className="font-sans font-bold text-navy">Wat jij meeneemt</p>
+              <p className="font-serif text-navy/70 mt-4 leading-relaxed">
+                Het gesprek over geld is niet langer ongemakkelijk. Je weet wat je doorgeeft. En die
+                stille zorg, die al jaren op de achtergrond knaagt, die is eindelijk ergens omgezet
+                in iets concreets.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        <AnimatedSection className="mt-10">
+          <p className="font-serif text-navy/85 text-lg leading-relaxed">
+            Je koopt dit niet alleen voor je kind. Je repareert ook iets in jezelf. Iets wat jouw
+            ouders je nooit hebben meegegeven: kennis over geld.
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-8">
+          <p className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-fuchsia leading-tight">
+            Jij doorbreekt de cyclus.
+            <br />
+            Vandaag.
+          </p>
+        </AnimatedSection>
       </div>
     </section>
   )
@@ -598,6 +670,7 @@ export default function Home() {
       <ReviewSection />
       <QuoteSection />
       <FAQSection />
+      <CycleBreakerSection />
       <PricingSection />
       <FinalCTASection />
       <Footer />
