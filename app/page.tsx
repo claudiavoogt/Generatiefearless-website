@@ -57,14 +57,7 @@ function StickyHeader() {
         isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-3" : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Generatie%20Fearless%20logo%20transparant-fCzyuLlfGIP7Bcv4uPBiFFgWO9l74s.png"
-          alt="Generatie Fearless"
-          width={150}
-          height={50}
-          className="h-8 md:h-10 w-auto"
-        />
+      <div className="container mx-auto px-4 flex items-center justify-end">
         <a
           href={BETAALLINK}
           className="bg-fuchsia text-white font-bold text-sm px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
@@ -275,7 +268,7 @@ function CourseSection() {
     {
       title: "Het Potjessysteem",
       description:
-        "Een simpel systeem van 4 potjes dat elk kind direct kan toepassen. Zakgeld, bijbaantje, verjaardag — alles gaat erdoorheen.",
+        "Een simpel systeem van 4 potjes dat elk kind direct kan toepassen. Zakgeld, bijbaantje, verjaardag. Alles gaat erdoorheen.",
     },
     {
       title: "Geld Laten Werken",
@@ -285,7 +278,7 @@ function CourseSection() {
     {
       title: "De Eerste Stap",
       description:
-        "Stap voor stap een kindrekening openen bij een betrouwbare broker in Nederland en de eerste echte belegging doen.",
+        "Stap voor stap een kindrekening openen bij een betrouwbare broker. En je kind gaat de eerste belegging aankopen!",
     },
     {
       title: "Fearless voor Altijd",
@@ -305,7 +298,7 @@ function CourseSection() {
 
         <AnimatedSection className="mt-4">
           <p className="font-serif text-lg md:text-xl text-navy/80 leading-relaxed">
-            Geen theorie. Geen saaie spreadsheets. Gewoon doen.
+            Geen saaie theorie of grafieken. Gewoon doen.
           </p>
         </AnimatedSection>
 
@@ -360,7 +353,7 @@ function BonusesSection() {
       <div className="container mx-auto max-w-3xl">
         <AnimatedSection>
           <h2 className="font-sans font-extrabold text-2xl md:text-3xl lg:text-4xl text-white text-center">
-            Dit krijg je er gratis bij
+            Deze 3 bonussen krijg je erbij:
           </h2>
         </AnimatedSection>
 
@@ -388,6 +381,25 @@ function BonusesSection() {
   )
 }
 
+function ResultSection() {
+  return (
+    <section className="bg-paars py-16 md:py-24 px-4">
+      <div className="container mx-auto max-w-3xl text-center">
+        <AnimatedSection>
+          <p className="font-sans font-extrabold text-2xl md:text-3xl lg:text-4xl text-white leading-tight">
+            Na Generatie Fearless weet je kind hoe het slim met geld en (later) inkomen omgaat én hoe het vermogen opbouwt.
+          </p>
+        </AnimatedSection>
+        <AnimatedSection className="mt-6">
+          <p className="font-display italic text-2xl md:text-3xl text-mint leading-tight">
+            Sterker nog: je kind ís dan al vermogen aan het opbouwen.
+          </p>
+        </AnimatedSection>
+      </div>
+    </section>
+  )
+}
+
 function ReviewSection() {
   return (
     <section className="bg-navy py-16 md:py-24 px-4">
@@ -408,16 +420,26 @@ function ReviewSection() {
   )
 }
 
-function QuoteSection() {
+function ClarifierSection() {
   return (
-    <section className="bg-navy py-16 md:py-24 px-4">
+    <section className="bg-mint py-14 md:py-20 px-4">
       <div className="container mx-auto max-w-3xl text-center">
         <AnimatedSection>
-          <p className="font-display italic text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-            {'"'}Leer je kind beleggen - en geef ze de voorsprong die jij nooit kreeg.{'"'}
+          <p className="font-sans font-semibold text-sm uppercase tracking-[0.2em] text-navy/70">
+            Twee vliegen in één klap
           </p>
-          <p className="font-sans font-semibold text-mint mt-6 tracking-wider">
-            Generatie Fearless
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-4">
+          <h2 className="font-sans font-extrabold text-2xl md:text-4xl lg:text-[44px] text-navy leading-tight">
+            Je kind leert slimmer omgaan met geld <span className="text-fuchsia">én</span> beleggen
+          </h2>
+        </AnimatedSection>
+
+        <AnimatedSection className="mt-5">
+          <p className="font-serif text-navy/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            Dit is geen beleggen vóór jou als ouder. Het is een cursus waarmee jíj je kind
+            stap voor stap leert hoe geld werkt, én hoe het z&apos;n eerste beleggingen doet.
           </p>
         </AnimatedSection>
       </div>
@@ -451,6 +473,11 @@ function FAQSection() {
       question: "Zit er persoonlijke begeleiding van jou bij?",
       answer:
         "Nee, deze cursus doorloop je zelfstandig, samen met je kind. Kom je écht ergens niet uit? Stuur me dan een mail, dan ga ik je helpen.",
+    },
+    {
+      question: "Hoe lang heb ik toegang tot de online cursus?",
+      answer:
+        "Je houdt onbeperkt toegang. Je kunt wanneer je maar wil de lessen opnieuw bekijken!",
     },
     {
       question: "Wat maakt deze cursus anders dan jouw programma Investeren kun je Leren?",
@@ -549,7 +576,7 @@ function CycleBreakerSection() {
           </AnimatedSection>
         </div>
 
-        <AnimatedSection className="mt-10">
+        <AnimatedSection className="mt-16">
           <p className="font-serif text-navy/85 text-lg leading-relaxed">
             Je koopt dit niet alleen voor je kind. Je repareert ook iets in jezelf. Iets wat jouw
             ouders je nooit hebben meegegeven: kennis over geld.
@@ -558,9 +585,7 @@ function CycleBreakerSection() {
 
         <AnimatedSection className="mt-8">
           <p className="font-sans font-extrabold text-3xl md:text-4xl lg:text-5xl text-fuchsia leading-tight">
-            Jij doorbreekt de cyclus.
-            <br />
-            Vandaag.
+            Jij doorbreekt de cyclus. Vandaag.
           </p>
         </AnimatedSection>
       </div>
@@ -663,12 +688,13 @@ export default function Home() {
     <main>
       <StickyHeader />
       <HeroSection />
+      <ClarifierSection />
       <PainSection />
       <AboutSection />
       <CourseSection />
+      <ResultSection />
       <BonusesSection />
       <ReviewSection />
-      <QuoteSection />
       <FAQSection />
       <CycleBreakerSection />
       <PricingSection />
