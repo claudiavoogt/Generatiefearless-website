@@ -480,6 +480,11 @@ function FAQSection() {
         "Je houdt onbeperkt toegang. Je kunt wanneer je maar wil de lessen opnieuw bekijken!",
     },
     {
+      question: "Hoe krijg ik mijn kind mee?",
+      answer:
+        "Een vraag die ik vaak hoor, en heel terecht. Niet elk kind staat meteen te springen, en dat is precies waar veel ouders vastlopen. Daarom zit er een aparte bonusles bij die je stap voor stap meeneemt in hoe je je kind enthousiast maakt, en wat je doet als het in eerste instantie nee zegt. Je hoeft je kind niet te overtuigen of te dwingen. Je hoeft alleen de juiste deur open te zetten, de rest doet de cursus.",
+    },
+    {
       question: "Wat maakt deze cursus anders dan jouw programma Investeren kun je Leren?",
       answer:
         "Heel goede vraag. En een eerlijk antwoord. Generatie Fearless en Investeren kun je Leren zijn twee heel verschillende producten voor twee heel verschillende fases. Generatie Fearless is voor kinderen die beginnen. Met kleine bedragen, zakgeld, bijbaantjes. Ze leren een gewoonte opbouwen, begrijpen hoe geld werkt en doen hun eerste beleggingen. Generatie Fearless is specifiek ontworpen voor ouders die hun kind willen leren beleggen. De taal is anders, de voorbeelden zijn anders, en de focus ligt op samen doen met je kind. Je krijgt praktische tools om je kind stap voor stap mee te nemen. Investeren kun je Leren is voor volwassenen die een serieus vermogen willen opbouwen. Daarin leer je welke fondsen/ETF's het best presteren, hoe je die kunt vinden, hoe je je vermogen actief beschermt en hoe je een strategie bouwt waarbij je geld exponentieel groeit. Dat is een heel ander niveau, met andere verantwoordelijkheden en andere bedragen. Zie het zo: Generatie Fearless is het fietsje met zijwieltjes. Je kind leert balanceren, krijgt vertrouwen en bouwt een gewoonte voor het leven. Investeren kun je Leren is leren om echt te leren fietsen.",
