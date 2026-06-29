@@ -326,7 +326,7 @@ function CourseSection() {
     {
       title: "Geld Laten Werken",
       description:
-        "Wat is beleggen echt? Wat is een ETF? Waarom is vroeg beginnen het geheime ingrediënt?",
+        "Wat is beleggen echt? Wat is een ETF? Waarom is vroeg beginnen het geheime ingrediënt? En hoe herken je een slechte belegging?",
     },
     {
       title: "De Eerste Stap",
@@ -336,7 +336,7 @@ function CourseSection() {
     {
       title: "Fearless voor Altijd",
       description:
-        "Hoe herken je een slechte belegging? Hoe houd je de gewoonte van beleggen levend? En wat is de volgende stap als je kind groeit?",
+        "Hoe houd je de gewoonte van beleggen levend? En wat is de volgende stap als je kind groeit?",
     },
   ]
 
