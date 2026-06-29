@@ -6,6 +6,55 @@ import Image from "next/image"
 
 const BETAALLINK = "https://claudiavoogt.kennis.shop/pay/generatiefearless"
 
+// Aftelklok naar het einde van de introductieprijs. Verdwijnt automatisch na precies 1 week.
+const OFFER_END = new Date("2026-07-08T00:00:00+02:00").getTime()
+
+function CountdownBanner() {
+  const [now, setNow] = useState<number | null>(null)
+
+  useEffect(() => {
+    setNow(Date.now())
+    const id = setInterval(() => setNow(Date.now()), 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  if (now === null) return null // voorkomt hydration-mismatch
+  if (now >= OFFER_END) return null // na precies 1 week weg
+
+  const diff = Math.max(0, OFFER_END - now)
+  const days = Math.floor(diff / 86400000)
+  const hours = Math.floor((diff % 86400000) / 3600000)
+  const minutes = Math.floor((diff % 3600000) / 60000)
+  const seconds = Math.floor((diff % 60000) / 1000)
+
+  const units = [
+    { v: days, l: "dagen" },
+    { v: hours, l: "uur" },
+    { v: minutes, l: "min" },
+    { v: seconds, l: "sec" },
+  ]
+
+  return (
+    <div className="bg-paars rounded-2xl px-6 py-5 md:py-6 max-w-2xl mx-auto shadow-lg">
+      <p className="font-sans font-bold text-mint text-center text-sm md:text-base uppercase tracking-wider">
+        Introductieprijs nog geldig
+      </p>
+      <div className="flex justify-center gap-3 md:gap-6 mt-3">
+        {units.map((u) => (
+          <div key={u.l} className="flex flex-col items-center">
+            <span className="font-sans font-extrabold text-white text-3xl md:text-5xl tabular-nums leading-none">
+              {String(u.v).padStart(2, "0")}
+            </span>
+            <span className="font-sans text-white/70 text-xs md:text-sm uppercase tracking-wide mt-1">
+              {u.l}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function useInView(options = {}) {
   const ref = useRef<HTMLDivElement>(null)
   const [isInView, setIsInView] = useState(false)
@@ -73,6 +122,10 @@ function HeroSection() {
   return (
     <section className="min-h-screen flex flex-col justify-center bg-whitesmoke pt-20 pb-12 px-4">
       <div className="container mx-auto max-w-4xl">
+        <AnimatedSection className="mb-8">
+          <CountdownBanner />
+        </AnimatedSection>
+
         <AnimatedSection>
           <div className="flex justify-center mb-8">
             <Image
