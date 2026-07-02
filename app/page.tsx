@@ -505,7 +505,7 @@ function FAQSection() {
     {
       question: "Voor welke leeftijd is deze cursus geschikt?",
       answer:
-        "De cursus is geschikt voor ouders met kinderen vanaf ongeveer 10 jaar. Dat is de leeftijd waarop kinderen abstract kunnen nadenken over geld en de concepten echt beginnen te begrijpen. Maar de mindset en het potjessysteem kun je al veel eerder introduceren. Hoe eerder de gewoonte is ingesleten, hoe groter het effect later.",
+        "De cursus is geschikt voor ouders met kinderen vanaf ongeveer 10 tot ongeveer 16 jaar. Dat is de leeftijd waarop kinderen abstract kunnen nadenken over geld en de concepten echt beginnen te begrijpen. Maar de mindset en het potjessysteem kun je al veel eerder introduceren. Hoe eerder de gewoonte is ingesleten, hoe groter het effect later.",
     },
     {
       question: "Moet mijn kind meedoen of is het alleen voor mij als ouder?",
